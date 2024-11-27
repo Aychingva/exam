@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+#hero{
+    width: 100%;
+    height: 100vh;
+    background: url(https://preview.colorlib.com/theme/startup2/img/banner/banner.png.webp);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+}
+.container{
+    width:100%;
+    max-width:1140px;
+    position: relative;
+
+}
+
+#hero::before{
+    opacity: 0.8;
+    content:"";
+    position: absolute;
+    background: #1F1F1F;
+    /* z-index: -1; */
+    inset: 0;
+    
+}
+.row{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 60px;
+
+}
+
+h1{
+    color: aliceblue;
+    font-size: 78px;
+    font-family: "Roboto", sans-serif;;
+    margin-bottom: 54px;
+    line-height: 84px;
+}
+
+button{
+    background-color:#615CFD;
+    color: white;
+    padding: 12px 33px;
+    font-size: 16px;
+    text-align: center;
+    text-transform: capitalize;
+    cursor: pointer;
+    border-radius: 30px;
+    
+    transition: 0.5s;
+    
+    border: 1px solid #615cfd;
+    
+
+}
+
+ button:hover{
+    background-color: transparent; 
+    border: 1px solid #615cfd;
+    color:#615CFD
+
+}
+
+
+button:focus {
+    outline: 2px solid #615CFD; /* Custom focus outline for accessibility */
+    outline-offset: 4px;
+}
